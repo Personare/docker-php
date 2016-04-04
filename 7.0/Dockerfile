@@ -3,6 +3,7 @@ FROM php:7.0.4-fpm
 RUN apt-get update
 RUN apt-get install -y git
 RUN apt-get install -y curl
+RUN apt-get install -y unzip
 
 RUN rm -rf /var/lib/apt/lists/*
 
