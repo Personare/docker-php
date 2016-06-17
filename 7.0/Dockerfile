@@ -1,5 +1,7 @@
 FROM php:7.0.4-fpm
 
+MAINTAINER Personare <devops@personare.com.br>
+
 RUN apt-get update
 RUN apt-get install -y git
 RUN apt-get install -y curl
