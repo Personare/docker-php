@@ -10,6 +10,7 @@ RUN apt-get update && \
         libmcrypt-dev && \
     docker-php-ext-install \
         mysqli \
+        mbstring \
         pdo \
         pdo_mysql \
         mcrypt && \
