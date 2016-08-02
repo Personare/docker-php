@@ -8,13 +8,13 @@ RUN apt-get update && \
         curl \
         unzip \
         libmcrypt-dev && \
-    docker-php-ext-install \
+        docker-php-ext-install \
         mysqli \
         mbstring \
         pdo \
         pdo_mysql \
         mcrypt && \
-    rm -rf /var/lib/apt/lists/*
+        rm -rf /var/lib/apt/lists/*
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
